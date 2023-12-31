@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Let's talk about Var, Let, and Const.
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <div>
+                <h1 style="text-align: center;">Var</h1>
+                <p>The var keyword in JavaScript was widely used for variable declaration before the introduction of ES6. In fact, prior to ES6, there was no alternative declaration keyword. However, variables declared with var have certain issues. One notable problem is that var variables are hoisted and behave as if they are in the global scope. Recognizing these issues, JavaScript developers found a solution and updated the language to include new keywords, addressing the shortcomings associated with the use of var.
+                </p>
+            </div>
+            <div >
+                <h1 style="text-align: center;">Let</h1>
+                <p>
+                  The let keyword is a potent feature in JavaScript, effectively resolving the drawbacks we discussed with the var keyword. Unlike var, let introduces block scope for variables. Values assigned to variables declared with let can be modified within their respective scopes. While you have the flexibility to update and change the values as needed, it's important to note that re-declaration of the same variable using let is not allowed.
+                </p>
+            </div>
+            <div>
+                <h1 style="text-align: center;">Const</h1>
+                <p>
+                  Variables declared with const in JavaScript retain constant values throughout their scope. While const declarations exhibit similarities to let declarations, there are key distinctions. Const values cannot be modified or re-declared once assigned. Similar to let, const introduces block scope for variables.
+                </p>
+            </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" style="text-align: center;">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Tell us the use cases of null and undefined
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              In JavaScript, both undefined and null represent the absence of a meaningful value, but they are used in slightly different contexts.
+              <h1 style="text-align: center;">undefined</h1>
+              <p>
+                If a variable is declared without being initialized or if a function lacks a return value, the variable or the function's result becomes undefined. The attempt to access a non-existent object property or array element likewise leads to an undefined outcome. This undefined value is considered a primitive in JavaScript.
+              </p>
+              <h1 style="text-align: center;">null</h1>
+              <p>Undefined serves as a purposeful assignment signifying the absence of any object value. Frequently employed to explicitly denote that a variable or object property should lack a value or reference to any object, undefined is also classified as a primitive value in JavaScript.</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              What do you mean by REST API?
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <p>
+                Representational State Transfer (REST) is an architectural style that defines a set of constraints to be used for creating web services. REST API is a way of accessing web services in a simple and flexible way without having any processing.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

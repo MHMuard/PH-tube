@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html data-theme="light" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PH TUBE</title>  
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./style.css">
+    
+  </head>
+  <body>
+    <!-- Header Start Here -->
+    <header
+      class="header-container container flex py-5 justify-between"
+    >
+      <div class="header-img-container">
+        <img
+          class="header-img sm:h-full object-contain"
+          src="./img/Logo.png"
+          alt=""
+        />
+      </div>
+      <div
+        class="tooltip tooltip-bottom"
+        data-tip="Highest to Lowest"
+        id="sort-container"
+      >
+        <button
+          onclick="handleSort()"
+          id="sort-by"
+          class="navbar-center text-neutral-500 bg-heroGray sm:px-5 px-2 py-2 rounded-md text-xs sm:text-base font-medium"
+        >
+          Sort by view
+        </button>
+      </div>
+
+      <ul class="menu menu-horizontal text-sm xl:px-1 xl:text-lg font-medium">
+        <li class="divide-y divide-dashed bg-heroPrimary rounded-md">
+          <a class='text-xs sm:text-base px-2 sm:px-5 font-medium' href='./page2.html'>BLOG</a
+          >
+        </li>
+      </ul>
+    </header>
+
+    <!-- Main  Start Here -->
+    <main
+      class="container mx-auto w-[92%] my-4 md:my-6 lg:w-full text-neutral-950"
+    >
+      <!-- Product grid start here -->
+
+      <section>
+        <ul
+          id="categories-ul"
+          class="menu menu-horizontal text-white flex gap-1 sm:gap-5 justify-center items-center xl:px-1 text-sm font-medium"
+        ></ul>
+      </section>
+      <section class="mt-6 md:mt-8">
+        <div id="empty"></div>
+        <div id="spinner" class="my-48 w-56 mx-auto">
+          <progress class="progress w-56 mx-auto"></progress>
+        </div>
+        <div
+          id="video-container"
+          class="cursor-pointer grid lg:grid-cols-4 sm:grid-cols-2 md:grid-cols-3 grid-cols-1 gap-5 mt-12"
+        ></div>
+      </section>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
